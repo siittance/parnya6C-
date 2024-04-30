@@ -1,0 +1,59 @@
+﻿<Page x:Class="CalendarEmocia1.View.Pages.VyborNastroeniya"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:emoji="clr-namespace:CalendarEmocia1.View.UserInerface"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CalendarEmocia1.View.Pages" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="450"
+      Title="VyborNastroeniya">
+
+    <Grid  Background="LightSteelBlue" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}"
+ToolTip="MaterialDesignFlatSecondaryMidBgButton" Grid.Column="6" Click="SaveAndExit" >
+            <materialDesign:PackIcon Kind="ContentSave"/>
+        </Button>
+        <Button Content="&lt;--" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}"
+ToolTip="MaterialDesignFlatSecondaryMidBgButton" Click="ReturnVCalendar"/>
+
+        <TextBlock
+      FontSize="16"
+      Text="Твой вайб сегодня.." Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <CheckBox
+      Grid.ColumnSpan="2" Grid.Row="3"
+      
+      Style="{StaticResource MaterialDesignUserForegroundCheckBox}">
+            <emoji:EmociyaDance dancing="Танцевать хочеца!"/>
+        </CheckBox>
+        <CheckBox Style="{StaticResource MaterialDesignUserForegroundCheckBox}" Grid.ColumnSpan="2" Grid.Row="1">
+            <emoji:EmociaSvoboda Emociii="Свободный"/>
+        </CheckBox>
+        <CheckBox
+      Grid.ColumnSpan="2" Grid.Row="2"
+      Style="{StaticResource MaterialDesignUserForegroundCheckBox}">
+            <emoji:EmociyaChill chilling="Жоский чилл"/>
+        </CheckBox>
+        <CheckBox
+Grid.ColumnSpan="2" Grid.Row="4"
+Style="{StaticResource MaterialDesignUserForegroundCheckBox}">
+            <emoji:EmociyaIoga ioging="Расслабон"/>
+        </CheckBox>
+        <TextBlock Grid.Column="1" x:Name="Dni" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+        <Frame x:Name="VozvratKCalendaru" Grid.ColumnSpan="4" Grid.RowSpan="6" Height="500" VerticalAlignment="Bottom" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Page>
