@@ -38,20 +38,20 @@ ToolTip="MaterialDesignFlatSecondaryMidBgButton" Click="ReturnVCalendar"/>
       Grid.ColumnSpan="2" Grid.Row="3"
       
       Style="{StaticResource MaterialDesignUserForegroundCheckBox}">
-            <emoji:EmociyaDance dancing="Танцевать хочеца!"/>
+            <emoji:EmociyaDance/>
         </CheckBox>
         <CheckBox Style="{StaticResource MaterialDesignUserForegroundCheckBox}" Grid.ColumnSpan="2" Grid.Row="1">
-            <emoji:EmociaSvoboda Emociii="Свободный"/>
+            <emoji:EmociaSvoboda/>
         </CheckBox>
         <CheckBox
       Grid.ColumnSpan="2" Grid.Row="2"
       Style="{StaticResource MaterialDesignUserForegroundCheckBox}">
-            <emoji:EmociyaChill chilling="Жоский чилл"/>
+            <emoji:EmociyaChill/>
         </CheckBox>
         <CheckBox
 Grid.ColumnSpan="2" Grid.Row="4"
 Style="{StaticResource MaterialDesignUserForegroundCheckBox}">
-            <emoji:EmociyaIoga ioging="Расслабон"/>
+            <emoji:EmociyaIoga/>
         </CheckBox>
         <TextBlock Grid.Column="1" x:Name="Dni" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
         <Frame x:Name="VozvratKCalendaru" Grid.ColumnSpan="4" Grid.RowSpan="6" Height="500" VerticalAlignment="Bottom" NavigationUIVisibility="Hidden"/>
