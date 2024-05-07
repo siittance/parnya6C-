@@ -20,8 +20,8 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Image Source="C:\Users\Administrator\source\repos\CalendarEmocia\CalendarEmocia\View\images\kvadratik.png" x:Name="KnopkaDate" Grid.ColumnSpan="4" Grid.RowSpan="5" Width="65" Height="60" MouseRightButtonUp="KnopkaDate_MouseRightButtonUp" />
-        <Image Source="C:\Users\Administrator\source\repos\CalendarEmocia\CalendarEmocia\View\images\plus_sign_icon.png" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="2" Height="25" Width="25" MouseDown="Image_MouseDown"/>
+        <Image Source="C:\Users\nitz4\Desktop\calendar\CalendarEmocia\CalendarEmocia\View\images\kvadratik.png" x:Name="KnopkaDate" Grid.ColumnSpan="4" Grid.RowSpan="5" Width="65" Height="60" MouseRightButtonUp="KnopkaDate_MouseRightButtonUp" />
+<Image Source="C:\Users\nitz4\Desktop\calendar\CalendarEmocia\CalendarEmocia\View\images\plus_sign_icon.png" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="2" Height="25" Width="25" MouseDown="Image_MouseDown"/>
         <TextBlock x:Name="IconckaDateBlock" Grid.Column="1" Grid.Row="1" Text="{Binding Icon}" FontSize="10" Grid.ColumnSpan="2" VerticalAlignment="Top" Height="15"/>
     </Grid>
 </UserControl>
