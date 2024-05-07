@@ -1,4 +1,5 @@
-﻿using System;
+using CalendarEmocia1.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,11 +21,10 @@ namespace CalendarEmocia1.View.UserInerface
     /// </summary>
     public partial class EmociyaIoga : UserControl
     {
-        public string ioging { get; set; }
         public EmociyaIoga()
         {
             InitializeComponent();
-            DataContext = this;
+            DataContext = new VyborNastroeniaViewModel();
         }
     }
 }
