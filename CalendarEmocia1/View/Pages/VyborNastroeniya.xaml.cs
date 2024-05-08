@@ -25,6 +25,7 @@ namespace CalendarEmocia1.View.Pages
         {
             InitializeComponent();
             Dni.Text = date.ToString("dd MMMM yyyy г.");
+            DataContext = new VyborNastroeniaViewModel();
         }
 
         private void perexod()
