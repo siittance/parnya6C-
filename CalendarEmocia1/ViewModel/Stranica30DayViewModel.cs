@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CalendarEmocia1.ViewModel
 {
-    internal class Stranica30DayViewModel
+    internal class Stranica30DayViewModel : BindingHelpers
     {
+    //привязка через xaml.cs Звучит как идея говна, мне не понравилось
     }
 }
